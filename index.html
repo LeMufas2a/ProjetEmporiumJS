@@ -20,28 +20,98 @@
         <!-- Image Header -->
 
         <!-- Début de la NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white mt-5 flex-column ">
-            <div class="">
-                <h1 class="fw-bold myTitle">emporium</h1>
-            </div>
-            <div class="container-fluid myNavBar pt-5">
+        <nav class="navbar navbar-expand-lg navbar-light mt-5  ">
+
+
+            <div class="container-fluid myNavBar  d-flex flex-column">
+                <h1 class="fw-bold myTitle mt-5">emporium</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav myNav p-2">
-                        <a class="nav-link text-dark" href="#">HOME</a>
-                        <a class="nav-link text-dark" href="#">PRODUCT</a>
-                        <a class="nav-link text-dark" href="#">BLOG</a>
-                        <a class="nav-link text-dark" href="#">ELEMENTS</a>
-                        <a class="nav-link text-dark" href="#">ABOUT</a>
-                        <a class="nav-link text-dark" href="#">CONTACT</a>
+                    <div class="navbar-nav myNav  mt-5 ">
+                        <a class="myA" href="#">HOME</a>
+                        <a class="myA" href="#">PRODUCT</a>
+                        <a class="myA" href="#">BLOG</a>
+                        <a class="myA" href="#">ELEMENTS</a>
+                        <a class="myA" href="#">ABOUT</a>
+                        <a class="myA" href="#">CONTACT</a>
                         <div class="d-flex">
                             <button class="myLight bg-white mx-2"></button>
                             <button class="myLight bg-dark "></button>
-                            <button class="connect bg-secondary">CONNEXION</button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary connect" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                CONNEXION
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title w-100 text-center myS" id="exampleModalLabel">Sign up
+                                            </h5>
+                                            <h5 class="modal-title w-100 text-center myR" id="exampleModalLabel">
+                                                Register
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex">
+                                            <!-- SignUp -->
+                                            <div class="h-100 w-100 mySign">
+                                                <div class="d-flex flex-column w-50 mySign">
+                                                    <input class="my-2 mx-2 myBdr" type="text"
+                                                        placeholder="Email Adress">
+                                                    <input class="my-2 mx-2 myBdr" type="password"
+                                                        placeholder="Password">
+                                                    <button type="button" class="btn btn-info my-2 mx-2 text-white">Sign
+                                                        Up</button>
+                                                </div>
+                                                <!-- Connect -->
+                                                <div class="d-flex flex-column w-100 my-4 myBout">
+                                                    <!-- Google -->
+                                                    <button type="button" class="btn bg-danger text-white myCon mt-2">
+                                                        <i class="fab fa-google-plus-g"></i> Connect with
+                                                        Google</button>
+                                                    <!-- FaceBook -->
+                                                    <button type="button" class="btn btn-primary myCon mt-2"><i
+                                                            class="fab fa-facebook-f text-white fs-5"></i> Connect with
+                                                        Facebook</button>
+                                                </div>
+                                            </div>
+                                            <!-- Register -->
+                                            <div class="h-100 w-100 myRegister">
+                                                <div class="d-flex w-100 mySign">
+                                                    <input class="w-75 myBdr  mx-1" type="text"
+                                                        placeholder="First Name">
+                                                    <input class="w-75 myBdr mx-1" type="text" placeholder="Name">
+                                                </div>
+                                                <!-- Connect -->
+                                                <div class="d-flex flex-column w-100 my-4">
+                                                    <input class="mx-1 myBdr" type="text" placeholder="Email Adress">
+                                                </div>
+                                                <!-- Pw -->
+                                                <div class="d-flex w-100 mySign">
+                                                    <input class="w-75 myBdr  mx-1" type="password"
+                                                        placeholder="Password">
+                                                    <input class="w-75 myBdr  mx-1" type="password"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <button type="button"
+                                                    class="btn btn-info w-50 mt-2 ms-1 text-white lastElement myBdr">Register</button>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +129,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 myShopDiv ">
                         <p class="text-danger myShop">Shop at</p>
-                        <img src="./assets/img/logo.png" class="img-fluid myShopImg w-100" alt="emporium">
+                        <img src="./assets/img/logo.png" class="img-fluid myShopImg w-75" alt="emporium">
                         <p class="text-secondary pt-4">A wonderful serinity has taker possession of my my entire souln
                             like these sweet mornings of spring which i enjoy with my.</p>
                         <button type="button" class="btn btn-danger myDanger rounded-pill px-5 py-3 mt-3">SALE
@@ -103,25 +173,29 @@
                 <!-- Colonne 1 -->
                 <div class="col-md-4 col-sm-12">
                     <!-- Col 1 Img 1 -->
-                    <div>
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-luxry-sofa.jpg" class="img-fluid" alt="">
-                        <p class="fw-bold text-center mt-4"> Luxury Sofa</p>
-                        <p class="text-center text-danger fw-bold">$600.00</p>
                     </div>
+                    <p class="fw-bold text-center mt-4"> Luxury Sofa</p>
+                    <p class="text-center text-danger fw-bold">$600.00</p>
                     <!-- Col 1 Img 2 -->
-                    <img src="./assets/img/products_mini/product-bag.jpg" class="img-fluid mt-4" alt="">
+                    <div class="myBefore myAfter">
+                        <img src="./assets/img/products_mini/product-bag.jpg" class="img-fluid mt-4" alt="">
+                    </div>
                     <div class="d-flex justify-content-center align-items-center myGalerie">
-                        <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                        <button type="button" class="btn btn-danger rounded-circle my-2 "
                             style="height: 75px; width: 75px;">SALE!</button>
-                        <div class="ms-4">
+                        <div class="myTel">
                             <p class="fw-bold text-center mt-4 d-block">Women Bag</p>
                             <span class="text-center text-danger fw-bold "> <del class="text-secondary">$420.00</del>
                                 $350.00</span>
                         </div>
                     </div>
                     <!-- Col 1 Img 3 -->
-                    <div class="mt-4">
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="mt-4">
                         <p class="fw-bold text-center mt-4"> Modern Sofa</p>
                         <p class="text-center text-danger fw-bold">$900.00</p>
                     </div>
@@ -130,25 +204,31 @@
                 <!-- Colonne 2 -->
                 <div class="col-md-4 col-sm-12">
                     <!-- Col 2 Img 1 -->
-                    <img src="./assets/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
-                    <div class="d-flex justify-content-center align-items-center myGalerie">
-                        <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                    <div class="myBefore myAfter">
+                        <img src="./assets/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center myGalerie my-0">
+                        <button type="button" class="btn btn-danger rounded-circle my-2 "
                             style="height: 75px; width: 75px;">SALE!</button>
-                        <div class="ms-4">
+                        <div class="ms-4 myTel">
                             <p class="fw-bold text-center mt-4 d-block">Leather Gloves</p>
                             <span class="text-center text-danger fw-bold"> <del class="text-secondary">$34.00</del>
                                 $27.00</span>
                         </div>
                     </div>
                     <!-- Col 2 Img 2 -->
-                    <div class="mt-4  pt-2 ">
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="mt-4  pt-2 ">
                         <p class="fw-bold text-center mt-4"> Minimal T-shirt</p>
                         <p class="text-center text-danger fw-bold">$15.00</p>
                     </div>
                     <!-- Col 2 Img 3 -->
-                    <div class="mt-4  pt-2">
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-bed.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div>
                         <p class="fw-bold text-center mt-4"> bed Linen</p>
                         <p class="text-center text-danger fw-bold">$79.00</p>
                     </div>
@@ -156,20 +236,26 @@
                 <!-- Colonne 3 -->
                 <div class="col-md-4 col-sm-12">
                     <!-- Col 3 Img 1 -->
-                    <div>
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div>
                         <p class="fw-bold text-center mt-4">Colorful Bowl</p>
                         <p class="text-center text-danger fw-bold">$18.00</p>
                     </div>
                     <!-- Col 3 Img 2 -->
-                    <div class="mt-4  pt-3">
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="mt-4 pt-1">
                         <p class="fw-bold text-center mt-4"> Plates Set</p>
                         <p class="text-center text-danger fw-bold">$30.00</p>
                     </div>
                     <!-- Col 3 Img 3 -->
-                    <div class="mt-4  pt-2">
+                    <div class="myBefore myAfter">
                         <img src="./assets/img/products_mini/product-shoes.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div>
                         <p class="fw-bold text-center mt-4"> Minimal Shoes</p>
                         <p class="text-center text-danger fw-bold">$60.00</p>
                     </div>
@@ -194,30 +280,74 @@
             <h2 class="fw-bold text-center mt-5">Hot Fashion Products</h2>
             <div class="carousel row">
                 <div class="myBilly d-flex align-items-center">
+                    <!-- Car 0 -->
                     <div class=" sliderItem image">
                         <img class="img-fluid" src="./assets/img/products_mini/product-luxry-sofa.jpg" alt="">
+                        <div class="myPrice">
+                            <p class="fw-bold text-center"> Luxury Sofa</p>
+                            <p class="text-center text-danger fw-bold">$600.00</p>
+                        </div>
                     </div>
+                    <!-- Car 1 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-gloves.jpg" alt="">
+                        <div class="d-flex myCarouss">
+                            <button type="button" class="btn btn-danger rounded-circle myAbs mt-2 ms-3"
+                                style="height: 75px; width: 75px;">SALE!</button>
+                            <div class="m-3">
+                                <p class="fw-bold text-center">Leather Gloves</p>
+                                <span class="text-center text-danger fw-bold"> <del class="text-secondary">$34.00</del>
+                                    $27.00</span>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Car 2 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-cups.jpg" alt="">
-
+                        <div class="myPrice">
+                            <p class="fw-bold text-center">Colorful Bowl</p>
+                            <p class="text-center text-danger fw-bold">$18.00</p>
+                        </div>
                     </div>
+                    <!-- Car 3 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-bag.jpg" alt="">
-
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-danger rounded-circle myAbs mt-2 ms-3"
+                                style="height: 75px; width: 75px;">SALE!</button>
+                            <div class="m-3">
+                                <p class="fw-bold text-center">Women Bag</p>
+                                <span class="text-center text-danger fw-bold"> <del class="text-secondary">$34.00</del>
+                                    $27.00</span>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Car 4 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-tshitr.jpg" alt="">
+                        <div class="myPrice">
+                            <p class="fw-bold text-center"> Minimal T-shirt</p>
+                            <p class="text-center text-danger fw-bold">$15.00</p>
+                        </div>
                     </div>
+                    <!-- Car 5 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-plates.jpg" alt="">
+                        <div class="myPrice">
+                            <p class="fw-bold text-center"> Plates Set</p>
+                            <p class="text-center text-danger fw-bold">$30.00</p>
+                        </div>
                     </div>
+                    <!-- Car 6 -->
                     <div class=" sliderItem">
                         <img class="img-fluid" src="./assets/img/products_mini/product-modern-sofa.jpg" alt="">
+                        <div class="myPrice">
+                            <p class="fw-bold text-center"> Modern Sofa</p>
+                            <p class="text-center text-danger fw-bold">$900.00</p>
+                        </div>
                     </div>
                 </div>
+                <!-- Bouton du Caroussel -->
                 <div class="carousel_action_btn">
                     <button class="myButton"></button>
                     <button class="myButton"></button>
@@ -227,23 +357,146 @@
                     <button class="myButton disparition"></button>
                     <button class="myButton disparition"></button>
                 </div>
-                <!-- Bouton du Caroussel -->
+            </div>
+        </section>
+        <!-- Dernière section main -->
+        <section class="container-fluid">
+
+            <div class="row">
+                <!-- Trusted 1 -->
+                <div class="col-md-4  d-flex justify-content-center">
+                    <div class="d-flex align-items-center flex-column myColor">
+                        <i class="far fa-check-circle fs-2 my-5"></i>
+                        <p class="fw-bold text-center">TRUSTED BY 10,000+ CUSTOMERS</p>
+                        <p class="my-5 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatibus
+                            numquam quas dolor perspiciatis nisi, dicta dolore amet. Lorem, ipsum dolor.</p>
+                        <button type="button" class="btn btn-dark mb-5">LEARN MORE</button>
+                    </div>
+                </div>
+                <!-- Trusted 2 -->
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center flex-column bg-danger text-white h-100">
+                        <i class="fas fa-paper-plane fs-2 my-5"></i>
+                        <p>VERY FAST SHIPPING</p>
+                        <p class="text-center my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatibus
+                            numquam quas dolor perspiciatis nisi, dicta dolore amet. Lorem, ipsum dolor.</p>
+                        <button type="button" class="btn btn-light mb-5">LEARN MORE</button>
+                    </div>
+                </div>
+                <!-- Trusted 3 -->
+                <div class="col-md-4  d-flex justify-content-center">
+                    <div class="d-flex align-items-center flex-column myColor">
+                        <i class="far fa-check-circle fs-2 my-5"></i>
+                        <p class="fw-bold text-center">TRUSTED BY 10,000+ CUSTOMERS</p>
+                        <p class="text-center my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatibus
+                            numquam quas dolor perspiciatis nisi, dicta dolore amet. Lorem, ipsum dolor.</p>
+                        <button type="button" class="btn btn-dark mb-5">LEARN MORE</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- Fin du Main-->
 
     <!-- Début du Footer-->
-    <footer>
+    <footer class="container-fluid mt-5 bg-dark">
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pt-5 mx-3">
+                        <h6 class="text-white pt-2">ABOUT US</h6>
+                        <div>
+                            <p class="text-secondary my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Veniam
+                                expedita fuga dolore laborum
+                                illo, soluta distinctio incidunt sapiente, numquam unde aperiam non eius consectetur
+                                quasi
+                                quidem ullam debitis neque
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pt-5 mx-3">
+                        <h6 class="text-white pt-2">RECENTS POSTS</h6>
+                        <div class="my-4 text-white h-100">
+                            <p>>Hello World</p>
+                            <p>>Wonderful serinity has taken</p>
+                            <p>>In my soul and absorb its power</p>
+                            <p>>I hear the buzz of the little</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pt-5 mx-3">
+                        <h6 class="text-white pt-2">RECENTS POSTS</h6>
+                        <div class="my-4 text-white h-100">
+                            <div class="d-flex text-secondary w-100">
 
+                                <!-- Business -->
+                                <span class="mx-2 myFoot">
+                                    business
+                                </span>
+                                <!-- Confidence -->
+                                <span class="mx-2 myFoot">
+                                    confidence
+                                </span>
+                                <!-- Gadgets -->
+                                <span class="mx-2 myFoot">
+                                    gadgets
+                                </span>
+                            </div>
+                            <div class="d-flex mt-2 text-secondary ">
+                                <!-- Identity -->
+                                <span class="mx-2 myFoot">
+                                    identity
+                                </span>
+                                <!-- Logo -->
+                                <span class="mx-2 myFoot">
+                                    logo
+                                </span>
+                                <!-- Photography -->
+                                <span class="mx-2 myFoot">
+                                    photography
+                                </span>
+                            </div>
+                            <div class="d-flex my-2 text-secondary">
+                                <!-- Time -->
+                                <span class="mx-2 myFoot">
+                                    time
+                                </span>
+                                <!-- Tips -->
+                                <span class="mx-2 myFoot">
+                                    tips
+                                </span>
+                                <!-- Works -->
+                                <span class="mx-2 myFoot">
+                                    works
+                                </span>
+                            </div>
+                            <div class="d-flex mt-2 text-secondary">
+                                <!-- WorkSpace -->
+                                <span class="mx-2 myFoot">work space</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 ">
+
+            </div>
+        </section>
     </footer>
     <!-- Fin du Footer-->
 
     <!-- Début du Scripts -->
 
     <script type="application/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="./assets/js//caroussel.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
     <!-- Fin du Scripts -->
 </body>
 

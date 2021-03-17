@@ -1,11 +1,13 @@
 .myNav
-    margin: 0% 12.5%
+    margin: 0 0
     width: 100%
     display: flex
     justify-content: center
     align-items: center
     a
         margin: 0 2%
+        text-decoration: none
+        color: black
 .myLight
     height: 20px
     width: 20px
@@ -18,5 +20,46 @@
     margin-left: 5%
     color: white
     border: hidden
-.myTitle
-    font-size: 50px
+h1
+    transition: 1s
+
+// Modal
+
+.myBdr
+    border: solid 1px #dbdbdb
+.myCon
+    margin-left: 10%
+.myRegister
+    display: flex
+    flex-direction: column
+.myS
+    cursor: crosshair
+.myR
+    cursor: crosshair
+.modal-content
+    height: 400px
+    width: 100% !important
+    margin-top: 25%
+
+.myInput
+@media  ( max-width: 600px )
+    .mySign
+        width: 100% !important
+        top: 0px
+        left: 0px
+    .modal-body
+        position: relative
+    .myCon
+        width: 100%
+        margin: 0px
+        padding-left: 0px
+    .myRegister
+        width: 100% i !important
+        position: absolute
+        left: 0px
+        top: 20%
+    .lastElement
+        position: absolute
+        left: 75px
+        bottom: 100px
+@media (max-width: 1024px)

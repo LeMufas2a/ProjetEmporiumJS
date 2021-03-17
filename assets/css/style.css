@@ -16749,7 +16749,7 @@ readers do not read off random characters that represent icons */
 }
 
 .myNav {
-  margin: 0% 12.5%;
+  margin: 0 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -16757,6 +16757,8 @@ readers do not read off random characters that represent icons */
 }
 .myNav a {
   margin: 0 2%;
+  text-decoration: none;
+  color: black;
 }
 
 .myLight {
@@ -16775,8 +16777,76 @@ readers do not read off random characters that represent icons */
   border: hidden;
 }
 
-.myTitle {
-  font-size: 50px;
+h1, .h1 {
+  transition: 1s;
+}
+
+.myBdr {
+  border: solid 1px #dbdbdb;
+}
+
+.myCon {
+  margin-left: 10%;
+}
+
+.myRegister {
+  display: flex;
+  flex-direction: column;
+}
+
+.myS {
+  cursor: crosshair;
+}
+
+.myR {
+  cursor: crosshair;
+}
+
+.modal-content {
+  height: 400px;
+  width: 100% !important;
+  margin-top: 25%;
+}
+
+@media (max-width: 600px) {
+  .mySign {
+    width: 100% !important;
+    top: 0px;
+    left: 0px;
+  }
+
+  .modal-body {
+    position: relative;
+  }
+
+  .myCon {
+    width: 100%;
+    margin: 0px;
+    padding-left: 0px;
+  }
+
+  .myRegister {
+    width: 100% i !important;
+    position: absolute;
+    left: 0px;
+    top: 20%;
+  }
+
+  .lastElement {
+    position: absolute;
+    left: 75px;
+    bottom: 100px;
+  }
+}
+footer {
+  height: 100%;
+}
+
+.myFoot {
+  border: solid grey 1px;
+  padding: 5px;
+  margin: 0 10%;
+  border-radius: 5%;
 }
 
 .myFirstSection {
@@ -16822,6 +16892,10 @@ readers do not read off random characters that represent icons */
   align-items: center;
 }
 
+.myBefore:before {
+  background: #000;
+}
+
 .myLearn {
   background-image: url("../../assets/img/cta-bg.jpg");
   background-size: cover;
@@ -16832,6 +16906,72 @@ readers do not read off random characters that represent icons */
 
 .myDiscover {
   font-size: 60px;
+}
+
+.myColor {
+  background: #d4d4d4;
+}
+
+.myBefore {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.myBefore img {
+  width: 100%;
+}
+.myBefore:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.myAfter {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.myBefore::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  width: 50%;
+  height: 70px;
+  background-color: #030303;
+  color: white;
+  z-index: 1;
+  content: "view detail";
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.myAfter::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  right: 0px;
+  width: 50%;
+  height: 70px;
+  background-color: #ff0000;
+  color: white;
+  z-index: 1;
+  content: "Add to cart";
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.myBefore:hover::before {
+  bottom: 0;
+  left: 0;
+}
+
+.myAfter:hover::after {
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 600px) {
@@ -16870,6 +17010,10 @@ readers do not read off random characters that represent icons */
 
   .myClothes {
     background-position-x: 75%;
+  }
+
+  .myTel {
+    margin-right: 50px;
   }
 }
 .myBilly {
@@ -16910,9 +17054,17 @@ readers do not read off random characters that represent icons */
   justify-content: center;
 }
 
+.myPrice {
+  width: 85%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
 @media (max-width: 600px) {
   .sliderItem {
-    width: 100%;
+    flex: 0 0 110%;
   }
 
   .disparition {
@@ -16922,6 +17074,16 @@ readers do not read off random characters that represent icons */
 
   .myButton {
     margin: 0 1%;
+  }
+
+  .myAbs {
+    margin: 0 5%;
+    padding: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .myAbs {
+    display: none;
   }
 }
 body {
